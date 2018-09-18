@@ -34,5 +34,15 @@ Thinking: Alos take 50 samples, record the way customers pay
           Calculate the proportion of each way
 */
 
-/*
-Challenge 3:
+
+//Challenge 3:
+
+let Wholecustomer = prompt ("How many customers have come this morning?");
+let Askcustomer = prompt(`How many customers have asked baristas about coffee?`) 
+var AskRate = 100 * Askcustomer/Wholecustomer
+
+if( AskRate > 50){
+    console.log(`Time to change!`);
+} else{
+    prompt(`Want a change?`);
+}
